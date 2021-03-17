@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import fetchJsonp from 'fetch-jsonp';
-import {
-    Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button
-} from 'reactstrap';
+import {Card, Row, Col, Container, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import './home.css'
 
 const Character = () => {
@@ -24,25 +22,47 @@ const Character = () => {
         fetchjson();
     }, []);
 
-    // console.log(states, "ayo maniis");
+    console.log(states, "ayo maniis");
 
     return (
         <div>
+            <Row>
             {states?.map((data, idx) => {
                 return (
+
                     <div key={idx}>
-                        <div>
-                            <Card style={{ width: "20rem", height: "20rem" }}>
-                                <CardImg src={data.media.m} className='Gambar' />
-                                <CardBody>
-                                    <CardTitle tag="h5">{data.author}</CardTitle>
-                                    {/* <CardText>Description: {data.description}.</CardText> */}
-                                </CardBody>
+                        <Col>
+                            <Card 
+                            style={{ width: '18rem', height: '75vh', }}
+                            className='Card'>
+                            <Card.Img variant="top" src={data.media.m} 
+                            style={{ width:'17rem', height:'15rem'}} />
+                            <Card.Body>
+                            <Card.Title style={{width:'15rem', height: '70vh'}}>
+                                <p>Title: {data.title}</p>
+                                <p>Published: {data.published}</p>
+                            </Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                            <Button 
+                            href={data.link}
+                            style={{
+                                backgroundColor: "black",
+                                color: " #fde84d",
+                                width: "15vw",
+                                height: "50px",
+                            }}
+                            className="Tombol">
+                            Details
+                            </Button>
+                            </Card.Footer>
                             </Card>
-                        </div>
+                        </Col>
                     </div>
+            
                 )
             })}
+            </Row>
         </div>
     )
 

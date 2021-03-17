@@ -1,10 +1,23 @@
 .Card{
     position: relative;
-    width: "10vw";
-    height: "20rem";
+    left: 2vh;
+    top: 2vh;
+    margin-bottom: 5vh;
 }
 .Gambar{
     position: relative;
-    width: 20vw;
+    width: 15vw;
     height: 20vh;
+    margin: auto;
+}
+.Row{
+    position: relative;
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 2%;
+    padding-bottom: 5%;
+}
+.Tombol{
+    position: relative;
+    left: 2.3vw;
 }

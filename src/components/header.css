@@ -2,46 +2,11 @@
     background: black;
     color: #fde84d;
 }
-.Nama {
-    color: white;
-    position: relative;
-    bottom: 5vh;
-    left: 10vh;
-}
-.Navigasi {
-    position: relative;
-    
-}
-.logo {
-    height: 4rem;
-    bottom: 15vh;
-}
-  
-.list-unstyled {
-    float: right;
-    padding-right: 10px;
-}
-button {
-    float: right;
-    background: #445E6B;
-    color: #fde84d;
-    margin: 10px;
-}
-  
-.list {
-    list-style: none;
-    float: right;
-    margin: 10px;
-    color: #fde84d;
-}
-  
-  
-form {
-    float: left;
-    margin: 10px;
-}
 
-.btn-primary{
-    background: #445E6B;
-    color: #fde84d;
+.logo {
+    position: relative;
+    top: 0vh;
+    right: 2vh;
+    height: 14vh;
+    bottom: 15vh;
 }
