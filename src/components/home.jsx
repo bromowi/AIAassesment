@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import fetchJsonp from 'fetch-jsonp';
 import {Card, Row, Col, Container, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import './home.css'
 
 const Character = () => {
@@ -21,8 +20,6 @@ const Character = () => {
     useEffect(() => {
         fetchjson();
     }, []);
-
-    console.log(states, "ayo maniis");
 
     return (
         <div>
