@@ -1,0 +1,10 @@
+.Card{
+    position: relative;
+    width: "10vw";
+    height: "20rem";
+}
+.Gambar{
+    position: relative;
+    width: 20vw;
+    height: 20vh;
+}
